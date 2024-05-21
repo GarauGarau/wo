@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="uploadSection">
+            <h1>Carica i tuoi allenamenti</h1>
+            <input type="file" id="fileInput" multiple accept=".json">
+        </section>
+
+        <section id="workoutSection" style="display:none;">
+            <h2 id="workoutTitle"></h2>
+            <p id="bodyPart"></p>
+            <table id="workoutTable">
+                <thead>
+                    <tr>
+                        <th>Nome esercizio</th>
+                        <th>Serie</th>
+                        <th>Ripetizioni</th>
+                        <th>Recupero (s)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="startWorkoutButton">Avvia allenamento</button>
+        </section>
+
+        <section id="exerciseSection" style="display:none;">
+            <h2 id="exerciseTitle"></h2>
+            <div id="exerciseDetails">
+                <h3 id="exerciseName"></h3>
+                <p id="setInfo"></p>
+                <p id="repInfo"></p>
+                <img id="exerciseImage" style="display:none; max-width: 100%; height: auto; margin: 1rem auto;">
+                <p id="nextExerciseInfo"></p>
+                <button id="finishSetButton">Fine Serie</button>
+            </div>
+            <div id="restSection" style="display:none;">
+                <h3>Riposo</h3>
+                <p>Tempo rimanente: <span id="restTime"></span> secondi</p>
+            </div>
+        </section>
+    </main>
+    <audio id="beepSound" src="beep.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
