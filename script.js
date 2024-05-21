@@ -1,4 +1,5 @@
 document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+document.getElementById('uploadNewButton').addEventListener('click', showUploadSection);
 
 let workouts = JSON.parse(localStorage.getItem('workouts')) || [];
 let currentDay = new Date().toLocaleString('en-us', { weekday: 'long' });
@@ -123,4 +124,10 @@ function resetWorkout() {
     currentExerciseIndex = 0;
     currentSet = 1;
     document.getElementById('uploadSection').style.display = 'block';
+}
+
+// Funzione per mostrare la sezione di caricamento
+function showUploadSection() {
+    document.getElementById('uploadSection').style.display = 'block';
+    document.getElementById('workoutSection').style.display = 'none';
 }
