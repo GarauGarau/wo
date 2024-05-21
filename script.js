@@ -1,5 +1,6 @@
 document.getElementById('fileInput').addEventListener('change', handleFileUpload);
 document.getElementById('uploadNewButton').addEventListener('click', showUploadSection);
+document.getElementById('uploadNewButtonNoWorkout').addEventListener('click', showUploadSection);
 
 let workouts = JSON.parse(localStorage.getItem('workouts')) || [];
 let currentDay = new Date().toLocaleString('en-us', { weekday: 'long' });
@@ -37,6 +38,11 @@ function loadTodaysWorkout() {
         populateWorkoutTable();
         document.getElementById('uploadSection').style.display = 'none';
         document.getElementById('workoutSection').style.display = 'block';
+        document.getElementById('noWorkoutSection').style.display = 'none';
+    } else {
+        document.getElementById('uploadSection').style.display = 'none';
+        document.getElementById('workoutSection').style.display = 'none';
+        document.getElementById('noWorkoutSection').style.display = 'block';
     }
 }
 
@@ -130,4 +136,5 @@ function resetWorkout() {
 function showUploadSection() {
     document.getElementById('uploadSection').style.display = 'block';
     document.getElementById('workoutSection').style.display = 'none';
+    document.getElementById('noWorkoutSection').style.display = 'none';
 }

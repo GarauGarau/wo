@@ -1,7 +1,7 @@
 [
   {
-    "day": "Monday",
-    "bodyPart": "Upper Body",
+    "day": "Lunedì",
+    "bodyPart": "Petto e bicipiti",
     "workout": [
       {
         "name": "Push-ups",
@@ -21,8 +21,8 @@
     ]
   },
   {
-    "day": "Tuesday",
-    "bodyPart": "Back and Legs",
+    "day": "Martedì",
+    "bodyPart": "Gambe",
     "workout": [
       {
         "name": "Pull-ups",
@@ -39,8 +39,8 @@
     ]
   },
   {
-    "day": "Wednesday",
-    "bodyPart": "Full Body",
+    "day": "Venerdì",
+    "bodyPart": "Spalle",
     "workout": [
       {
         "name": "Bench Press",
@@ -53,72 +53,6 @@
         "sets": 3,
         "reps": 10,
         "rest": 120
-      }
-    ]
-  },
-  {
-    "day": "Thursday",
-    "bodyPart": "Arms",
-    "workout": [
-      {
-        "name": "Bicep Curls",
-        "sets": 3,
-        "reps": 15,
-        "rest": 60
-      },
-      {
-        "name": "Tricep Dips",
-        "sets": 3,
-        "reps": 12,
-        "rest": 60
-      }
-    ]
-  },
-  {
-    "day": "Friday",
-    "bodyPart": "Cardio and Core",
-    "workout": [
-      {
-        "name": "Running",
-        "sets": 1,
-        "reps": 1,
-        "rest": 0
-      },
-      {
-        "name": "Plank",
-        "sets": 3,
-        "reps": 1,
-        "rest": 60
-      }
-    ]
-  },
-  {
-    "day": "Saturday",
-    "bodyPart": "HIIT",
-    "workout": [
-      {
-        "name": "Burpees",
-        "sets": 4,
-        "reps": 10,
-        "rest": 60
-      },
-      {
-        "name": "Mountain Climbers",
-        "sets": 3,
-        "reps": 20,
-        "rest": 60
-      }
-    ]
-  },
-  {
-    "day": "Sunday",
-    "bodyPart": "Rest Day",
-    "workout": [
-      {
-        "name": "Rest",
-        "sets": 0,
-        "reps": 0,
-        "rest": 0
       }
     ]
   }
