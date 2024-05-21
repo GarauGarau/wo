@@ -33,7 +33,7 @@ function loadTodaysWorkout() {
     let todayWorkoutData = workouts.find(w => w.day === currentDay);
     if (todayWorkoutData) {
         todaysWorkout = todayWorkoutData.workout;
-        document.getElementById('workoutTitle').innerText = `Allenamento del ${currentDay}`;
+        document.getElementById('workoutTitle').innerText = `${currentDay} workout`;
         document.getElementById('bodyPart').innerText = `Oggi allenerai: ${todayWorkoutData.bodyPart}`;
         populateWorkoutTable();
         document.getElementById('uploadSection').style.display = 'none';

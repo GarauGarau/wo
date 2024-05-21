@@ -21,14 +21,14 @@
     ]
   },
   {
-    "day": "Martedì",
+    "day": "Tuesday",
     "bodyPart": "Gambe",
     "workout": [
       {
         "name": "Pull-ups",
         "sets": 4,
         "reps": 10,
-        "rest": 120
+        "rest": 3
       },
       {
         "name": "Lunges",
