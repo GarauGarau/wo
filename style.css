@@ -38,6 +38,9 @@ table {
     overflow-x: auto; /* Consente lo scorrimento orizzontale */
 }
 
+
+
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
