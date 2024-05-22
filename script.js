@@ -115,8 +115,34 @@ function playBeepSound() {
     beepSound.play();
 }
 
+function endWorkout() {
+    document.getElementById('exerciseSection').style.display = 'none';
+    document.getElementById('noWorkoutSection').style.display = 'block';
+    document.getElementById('noWorkoutSection').innerHTML = '<h2>Allenamento completato!</h2>';
+}
+
 // Event listeners for the exercise section buttons
 document.getElementById('finishSetButton').addEventListener('click', function() {
     const exercise = currentWorkout[currentExerciseIndex];
     startRestTimer(exercise.rest);
+});
+
+document.getElementById('prevExerciseButton').addEventListener('click', function() {
+    if (currentExerciseIndex > 0) {
+        currentExerciseIndex--;
+        currentSetIndex = 0; // Reset set index when moving to previous exercise
+        displayCurrentExercise();
+    }
+});
+
+document.getElementById('nextExerciseButton').addEventListener('click', function() {
+    if (currentExerciseIndex < currentWorkout.length - 1) {
+        currentExerciseIndex++;
+        currentSetIndex = 0; // Reset set index when moving to next exercise
+        displayCurrentExercise();
+    }
+});
+
+document.getElementById('endWorkoutButton').addEventListener('click', function() {
+    endWorkout();
 });
