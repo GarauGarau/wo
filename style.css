@@ -33,6 +33,11 @@ table {
     overflow-x: auto;
 }
 
+.table-responsive {
+    width: 100%;
+    overflow-x: auto; /* Consente lo scorrimento orizzontale */
+}
+
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
@@ -85,7 +90,7 @@ button:hover {
     }
 
     th, td {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding: 6px;
     }
 
