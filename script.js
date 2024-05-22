@@ -1,5 +1,6 @@
 let currentWorkout = [];
 let currentExerciseIndex = 0;
+let currentSetIndex = 0; // New variable to track the current set
 let restTimer;
 let restTimeRemaining;
 
@@ -63,6 +64,7 @@ document.getElementById('startWorkoutButton').addEventListener('click', function
     document.getElementById('workoutSection').style.display = 'none';
     document.getElementById('exerciseSection').style.display = 'block';
     currentExerciseIndex = 0;
+    currentSetIndex = 0; // Initialize set index
     displayCurrentExercise();
 });
 
@@ -70,7 +72,7 @@ document.getElementById('startWorkoutButton').addEventListener('click', function
 function displayCurrentExercise() {
     const exercise = currentWorkout[currentExerciseIndex];
     document.getElementById('exerciseName').innerText = exercise.name;
-    document.getElementById('setInfo').innerText = `Serie: ${exercise.sets}`;
+    document.getElementById('setInfo').innerText = `Serie: ${currentSetIndex + 1} di ${exercise.sets}`; // Display current set
     document.getElementById('repInfo').innerText = `Ripetizioni: ${exercise.reps}`;
     const nextExercise = currentWorkout[currentExerciseIndex + 1];
     document.getElementById('nextExerciseInfo').innerText = nextExercise ? `Prossimo esercizio: ${nextExercise.name}` : 'Ultimo esercizio';
@@ -95,7 +97,11 @@ function updateRestTime() {
     } else {
         clearInterval(restTimer);
         playBeepSound();
-        if (currentExerciseIndex < currentWorkout.length - 1) {
+        if (currentSetIndex < currentWorkout[currentExerciseIndex].sets - 1) {
+            currentSetIndex++;
+            displayCurrentExercise();
+        } else if (currentExerciseIndex < currentWorkout.length - 1) {
+            currentSetIndex = 0; // Reset set index for the new exercise
             currentExerciseIndex++;
             displayCurrentExercise();
         } else {
@@ -114,26 +120,3 @@ document.getElementById('finishSetButton').addEventListener('click', function() 
     const exercise = currentWorkout[currentExerciseIndex];
     startRestTimer(exercise.rest);
 });
-
-document.getElementById('prevExerciseButton').addEventListener('click', function() {
-    if (currentExerciseIndex > 0) {
-        currentExerciseIndex--;
-        displayCurrentExercise();
-    }
-});
-
-document.getElementById('nextExerciseButton').addEventListener('click', function() {
-    if (currentExerciseIndex < currentWorkout.length - 1) {
-        currentExerciseIndex++;
-        displayCurrentExercise();
-    }
-});
-
-document.getElementById('endWorkoutButton').addEventListener('click', function() {
-    endWorkout();
-});
-
-function endWorkout() {
-    document.getElementById('exerciseSection').style.display = 'none';
-    document.getElementById('uploadSection').style.display = 'block';
-}
