@@ -1,5 +1,7 @@
 let currentWorkout = [];
 let currentExerciseIndex = 0;
+let restTimer;
+let restTimeRemaining;
 
 document.getElementById('fileInput').addEventListener('change', function(event) {
     const file = event.target.files[0];
@@ -72,16 +74,45 @@ function displayCurrentExercise() {
     document.getElementById('repInfo').innerText = `Ripetizioni: ${exercise.reps}`;
     const nextExercise = currentWorkout[currentExerciseIndex + 1];
     document.getElementById('nextExerciseInfo').innerText = nextExercise ? `Prossimo esercizio: ${nextExercise.name}` : 'Ultimo esercizio';
+
+    document.getElementById('exerciseDetails').style.display = 'block';
+    document.getElementById('restSection').style.display = 'none';
+}
+
+// Function to start rest timer
+function startRestTimer(restTime) {
+    document.getElementById('exerciseDetails').style.display = 'none';
+    document.getElementById('restSection').style.display = 'block';
+    restTimeRemaining = restTime;
+    updateRestTime();
+    restTimer = setInterval(updateRestTime, 1000);
+}
+
+function updateRestTime() {
+    if (restTimeRemaining > 0) {
+        document.getElementById('restTime').innerText = restTimeRemaining;
+        restTimeRemaining--;
+    } else {
+        clearInterval(restTimer);
+        playBeepSound();
+        if (currentExerciseIndex < currentWorkout.length - 1) {
+            currentExerciseIndex++;
+            displayCurrentExercise();
+        } else {
+            endWorkout();
+        }
+    }
+}
+
+function playBeepSound() {
+    const beepSound = document.getElementById('beepSound');
+    beepSound.play();
 }
 
 // Event listeners for the exercise section buttons
 document.getElementById('finishSetButton').addEventListener('click', function() {
-    if (currentExerciseIndex < currentWorkout.length - 1) {
-        currentExerciseIndex++;
-        displayCurrentExercise();
-    } else {
-        endWorkout();
-    }
+    const exercise = currentWorkout[currentExerciseIndex];
+    startRestTimer(exercise.rest);
 });
 
 document.getElementById('prevExerciseButton').addEventListener('click', function() {
