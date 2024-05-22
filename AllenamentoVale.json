@@ -1,0 +1,164 @@
+[
+    {
+        "day": "Monday",
+        "bodyPart": "Total Body",
+        "workout": [
+            {
+                "name": "Riscaldamento",
+                "sets": 1,
+                "reps": "5 min",
+                "rest": 60
+            },
+            {
+                "name": "Squat con manubri",
+                "sets": 4,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Affondi con manubri",
+                "sets": 3,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Deadlift con manubri",
+                "sets": 4,
+                "reps": 10,
+                "rest": 60
+            },
+            {
+                "name": "Panca piana con manubri",
+                "sets": 3,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Rematore con manubri",
+                "sets": 3,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Calf Raise (sollevamento polpacci) con manubri",
+                "sets": 3,
+                "reps": 20,
+                "rest": 60
+            },
+            {
+                "name": "Plank",
+                "sets": 3,
+                "reps": "1 min",
+                "rest": 60
+            }
+        ]
+    },
+    {
+        "day": "Wednesday",
+        "bodyPart": "Total Body",
+        "workout": [
+            {
+                "name": "Riscaldamento",
+                "sets": 1,
+                "reps": "5 min",
+                "rest": 60
+            },
+            {
+                "name": "Swing con kettlebell",
+                "sets": 4,
+                "reps": 15,
+                "rest": 60
+            },
+            {
+                "name": "Affondi laterali con kettlebell",
+                "sets": 3,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Goblet Squat con kettlebell",
+                "sets": 4,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Push-up",
+                "sets": 3,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Curl bicipiti con manubri",
+                "sets": 3,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Ponti glutei con elastici",
+                "sets": 3,
+                "reps": 15,
+                "rest": 60
+            },
+            {
+                "name": "Leg Curl con elastici",
+                "sets": 3,
+                "reps": 15,
+                "rest": 60
+            }
+        ]
+    },
+    {
+        "day": "Friday",
+        "bodyPart": "Total Body",
+        "workout": [
+            {
+                "name": "Riscaldamento",
+                "sets": 1,
+                "reps": "5 min",
+                "rest": 60
+            },
+            {
+                "name": "Jump Squat",
+                "sets": 4,
+                "reps": 15,
+                "rest": 60
+            },
+            {
+                "name": "Affondi saltati",
+                "sets": 3,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Pistol Squat assistito con elastico",
+                "sets": 3,
+                "reps": 10,
+                "rest": 60
+            },
+            {
+                "name": "Military Press con manubri",
+                "sets": 3,
+                "reps": 12,
+                "rest": 60
+            },
+            {
+                "name": "Plank con sollevamento gamba",
+                "sets": 3,
+                "reps": 15,
+                "rest": 60
+            },
+            {
+                "name": "Side Leg Lift con elastico",
+                "sets": 3,
+                "reps": 15,
+                "rest": 60
+            },
+            {
+                "name": "Russian Twist con manubrio",
+                "sets": 3,
+                "reps": 20,
+                "rest": 60
+            }
+        ]
+    }
+]
