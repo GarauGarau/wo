@@ -108,13 +108,13 @@
         ]
     },
     {
-        "day": "Friday",
+        "day": "Saturday",
         "bodyPart": "Total Body",
         "workout": [
             {
                 "name": "Riscaldamento",
                 "sets": 1,
-                "reps": "5 min",
+                "reps": "5",
                 "rest": 60
             },
             {

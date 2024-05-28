@@ -96,7 +96,7 @@
         ]
     },
     {
-        "day": "Friday",
+        "day": "Saturday",
         "bodyPart": "Dorso e Addominali",
         "workout": [
             {
@@ -106,13 +106,13 @@
                 "rest": 60
             },
             {
-                "name": "Pullover con manubrio",
-                "sets": 4,
-                "reps": 12,
+                "name": "Affondi",
+                "sets": 3,
+                "reps": 10,
                 "rest": 60
             },
             {
-                "name": "Lat Pulldown con elastici",
+                "name": "Squat",
                 "sets": 4,
                 "reps": 15,
                 "rest": 60
@@ -138,7 +138,7 @@
             {
                 "name": "Plank",
                 "sets": 3,
-                "reps": "1'",
+                "reps": "1",
                 "rest": 60
             }
         ]
