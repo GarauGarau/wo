@@ -1,30 +1,30 @@
 [
     {
-        "day": "Monday",
+        "day": "Friday",
         "bodyPart": "Spalle e Tricipiti",
         "workout": [
             {
                 "name": "Military Press con manubri",
                 "sets": 4,
-                "reps": 12,
+                "reps": 10,
                 "rest": 60
             },
             {
                 "name": "Alzate laterali con manubri",
                 "sets": 3,
-                "reps": 15,
+                "reps": 10,
                 "rest": 60
             },
             {
                 "name": "Alzate frontali con manubri",
                 "sets": 3,
-                "reps": 15,
+                "reps": 12,
                 "rest": 60
             },
             {
                 "name": "Arnold Press",
-                "sets": 4,
-                "reps": 12,
+                "sets": 3,
+                "reps": 10,
                 "rest": 60
             },
             {
@@ -48,92 +48,92 @@
         ]
     },
     {
-        "day": "Wednesday",
+        "day": "Sunday",
         "bodyPart": "Petto e Bicipiti",
         "workout": [
             {
                 "name": "Panca piana con manubri",
                 "sets": 4,
-                "reps": 12,
-                "rest": 6
+                "reps": 10,
+                "rest": 30
             },
             {
                 "name": "Panca inclinata con manubri",
                 "sets": 4,
-                "reps": 12,
-                "rest": 60
+                "reps": 10,
+                "rest": 30
             },
             {
                 "name": "Croci su panca con manubri",
                 "sets": 3,
-                "reps": 15,
-                "rest": 60
+                "reps": 12,
+                "rest": 30
             },
             {
                 "name": "Push-up",
                 "sets": 3,
-                "reps": 15,
-                "rest": 60
+                "reps": 8,
+                "rest": 30
             },
             {
                 "name": "Curl bicipiti con manubri",
                 "sets": 4,
-                "reps": 12,
-                "rest": 60
+                "reps": 10,
+                "rest": 30
             },
             {
                 "name": "Hammer Curl con manubri",
                 "sets": 3,
-                "reps": 15,
-                "rest": 60
+                "reps": 12,
+                "rest": 30
             },
             {
                 "name": "Curl concentrati con manubrio",
                 "sets": 3,
-                "reps": 15,
-                "rest": 60
+                "reps": 10,
+                "rest": 30
             }
         ]
     },
     {
-        "day": "Saturday",
-        "bodyPart": "Dorso e Addominali",
+        "day": "Tuesday",
+        "bodyPart": "Dorso e gambe",
         "workout": [
             {
                 "name": "Rematore con manubri",
                 "sets": 4,
                 "reps": 12,
-                "rest": 60
+                "rest": 30
             },
             {
                 "name": "Affondi",
                 "sets": 3,
                 "reps": 10,
-                "rest": 60
+                "rest": 30
             },
             {
                 "name": "Squat",
                 "sets": 4,
                 "reps": 15,
-                "rest": 60
+                "rest": 30
             },
             {
                 "name": "Shrug con manubri",
                 "sets": 3,
                 "reps": 15,
-                "rest": 60
+                "rest": 30
             },
             {
                 "name": "Russian Twist con manubrio",
                 "sets": 3,
                 "reps": 20,
-                "rest": 60
+                "rest": 30
             },
             {
                 "name": "Leg Raise",
                 "sets": 3,
                 "reps": 15,
-                "rest": 60
+                "rest": 30
             },
             {
                 "name": "Plank",
